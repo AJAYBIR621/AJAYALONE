@@ -137,7 +137,7 @@ async def start_pm(client, message: Message, _):
     except: pass
         
     try:
-        stk = await message.reply_sticker("CAACAgUAAxkBAAFG4Upp2LoZ9vFtJH-gGex3BMMj_p7NIwAC1xoAAoF1kFY_ujcAAbJO0xI7BA")
+        stk = await message.reply_sticker("CAACAgUAAxkBAAIXY2pE_sjucjC9aolPazSntTJ4nTreAAI9HAACyH_AVvV3F0pMg2EiPAQ")
         await asyncio.sleep(2) 
         await stk.delete()     
     except: pass
