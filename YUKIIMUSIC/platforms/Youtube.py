@@ -36,7 +36,7 @@ from YUKIIMUSIC.utils.database import is_on_off
 from YUKIIMUSIC.utils.formatters import time_to_seconds
 
 # SHRUTI API CONFIG
-FALLBACK_API_URL = "https://shrutibots.site"
+FALLBACK_API_URL = "http://Music.yukiapi.site"
 YOUR_API_URL = None
 
 cookies_file = "YUKIIMUSIC/assets/cookies.txt"
