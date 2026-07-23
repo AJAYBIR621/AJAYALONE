@@ -121,6 +121,20 @@ class YouTubeAPI:
         self.listbase = "https://youtube.com/playlist?list="
         self.reg = re.compile(r"\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])")
 
+              # Safe yt-dlp Configuration (YouTube Bot Detection Bypass)
+        self.opts = {
+            "cookiefile": "/root/AJAYALONE/cookies.txt",
+            "format": "bestaudio[ext=m4a]",
+            "geo_bypass": True,
+            "nocheckcertificate": True,
+            "quiet": True,
+            "no_warnings": True,
+            "extractor_args": {
+                "youtube": {
+                    "player_client": ["android", "ios", "web_embedded"]
+                }
+            }
+        }
     async def exists(self, link: str, videoid: Union[bool, str] = None):
         if videoid: link = self.base + link
         if re.search(self.regex, link): return True
