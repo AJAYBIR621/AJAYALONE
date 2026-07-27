@@ -112,7 +112,7 @@ def private_panel(_):
         [
             # 🌐 NEW: Website Button (Normal Color, Full Width) - Bada Wala
             api_btn(
-                text="⌁ 𝐓𝐁𝐒 𝐙 𝐲 ꧊᱂ 𝛐 𝛞 ⌁", 
+                text="⌁ 𝐙 𝐲 ꧊᱂ 𝛐 𝛞 ⌁", 
                 url="https://t.me/AJAY_OWN", 
                 custom_emoji_id="5262770659267735289" # No style given, defaults to normal color
             ),
